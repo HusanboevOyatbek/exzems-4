@@ -27,7 +27,7 @@ lastFourProducts.map((el) => {
         </h1>
       </div>
 
-      <div class="px-[10px] mt-[10px] text-[#414141]">
+      <div class="px-[10px] mt-[10px] text-[#414141] line-clamp-2">
         ${el.description}
       </div>
 
@@ -125,7 +125,7 @@ news.map((el) => {
        
       </div>
 
-      <div class="px-[10px] mt-[10px] text-[#414141]">
+      <div class="px-[10px] mt-[10px] text-[#414141]  line-clamp-2">
         ${el.description}
       </div>
 
@@ -177,7 +177,7 @@ productr.map((el) => {
        
       </div>
 
-      <div class="px-[10px] mt-[10px] text-[#414141]">
+      <div class="px-[10px] mt-[10px] text-[#414141]  line-clamp-2 ">
         ${el.description}
       </div>
 
