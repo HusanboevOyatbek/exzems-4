@@ -9,9 +9,9 @@ const products = [
     discount: 0,
     images: [
       "../assets/images/products/1.png",
-      "../assets/images/products/2.png",
-      "../assets/images/products/3.png",
-      "../assets/images/products/4.png",
+      "../assets/images/products/1_2.png",
+      "../assets/images/products/1_3.png",
+      "../assets/images/products/1_4.png",
     ],
   },
   {
@@ -25,9 +25,9 @@ const products = [
     discount: 20,
     images: [
       "../assets/images/products/2.png",
-      "../assets/images/products/3.png",
-      "../assets/images/products/4.png",
-      "../assets/images/products/5.png",
+      "../assets/images/products/2_2.png",
+      "../assets/images/products/2_3.png",
+      "../assets/images/products/2_4.png",
     ],
   },
   {
@@ -41,9 +41,9 @@ const products = [
     discount: 20,
     images: [
       "../assets/images/products/3.png",
-      "../assets/images/products/4.png",
-      "../assets/images/products/5.png",
-      "../assets/images/products/6.png",
+      "../assets/images/products/3_2.png",
+      "../assets/images/products/3_3.png",
+      "../assets/images/products/3_4.png",
     ],
   },
   {
@@ -57,9 +57,9 @@ const products = [
     discount: 20,
     images: [
       "../assets/images/products/4.png",
-      "../assets/images/products/5.png",
-      "../assets/images/products/6.png",
-      "../assets/images/products/7.png",
+      "../assets/images/products/4_2.png",
+      "../assets/images/products/4_3.png",
+      "../assets/images/products/4_4.png",
     ],
   },
   {
@@ -73,9 +73,9 @@ const products = [
     discount: 20,
     images: [
       "../assets/images/products/5.png",
-      "../assets/images/products/6.png",
-      "../assets/images/products/7.png",
-      "../assets/images/products/8.png",
+      "../assets/images/products/5_2.png",
+      "../assets/images/products/5_3.png",
+      "../assets/images/products/5_4.png",
     ],
   },
   {
@@ -89,9 +89,9 @@ const products = [
     discount: 50,
     images: [
       "../assets/images/products/6.png",
-      "../assets/images/products/7.png",
-      "../assets/images/products/8.png",
-      "../assets/images/products/9.png",
+      "../assets/images/products/6_2.png",
+      "../assets/images/products/6_3.png",
+      "../assets/images/products/6_4.png",
     ],
   },
   {
@@ -105,9 +105,9 @@ const products = [
     discount: 20,
     images: [
       "../assets/images/products/7.png",
-      "../assets/images/products/8.png",
-      "../assets/images/products/9.png",
-      "../assets/images/products/10.png",
+      "../assets/images/products/7_2.png",
+      "../assets/images/products/7_3.png",
+      "../assets/images/products/7_4.png",
     ],
   },
   {
@@ -121,9 +121,9 @@ const products = [
     discount: 20,
     images: [
       "../assets/images/products/8.png",
-      "../assets/images/products/9.png",
-      "../assets/images/products/10.png",
-      "../assets/images/products/11.png",
+      "../assets/images/products/8_2.png",
+      "../assets/images/products/8_3.png",
+      "../assets/images/products/8_4.png",
     ],
   },
   {
@@ -137,9 +137,9 @@ const products = [
     discount: 20,
     images: [
       "../assets/images/products/9.png",
-      "../assets/images/products/10.png",
-      "../assets/images/products/11.png",
-      "../assets/images/products/12.png",
+      "../assets/images/products/9_2.png",
+      "../assets/images/products/9_3.png",
+      "../assets/images/products/9_4.png",
     ],
   },
   {
@@ -153,9 +153,9 @@ const products = [
     discount: 0,
     images: [
       "../assets/images/products/10.png",
-      "../assets/images/products/11.png",
-      "../assets/images/products/12.png",
-      "../assets/images/products/13.png",
+      "../assets/images/products/10_2.png",
+      "../assets/images/products/10_3.png",
+      "../assets/images/products/10_4.png",
     ],
   },
   {
@@ -169,9 +169,9 @@ const products = [
     discount: 50,
     images: [
       "../assets/images/products/11.png",
-      "../assets/images/products/12.png",
-      "../assets/images/products/13.png",
-      "../assets/images/products/14.png",
+      "../assets/images/products/11_2.png",
+      "../assets/images/products/11_3.png",
+      "../assets/images/products/11_4.png",
     ],
   },
   {
@@ -185,9 +185,9 @@ const products = [
     discount: 20,
     images: [
       "../assets/images/products/12.png",
-      "../assets/images/products/13.png",
-      "../assets/images/products/14.png",
-      "../assets/images/products/15.png",
+      "../assets/images/products/12_2.png",
+      "../assets/images/products/12_3.png",
+      "../assets/images/products/12_4.png",
     ],
   },
   {
@@ -201,9 +201,9 @@ const products = [
     discount: 0,
     images: [
       "../assets/images/products/13.png",
-      "../assets/images/products/14.png",
-      "../assets/images/products/15.png",
-      "../assets/images/products/16.png",
+      "../assets/images/products/13_2.png",
+      "../assets/images/products/13_3.png",
+      "../assets/images/products/13_4.png",
     ],
   },
   {
@@ -217,9 +217,9 @@ const products = [
     discount: 50,
     images: [
       "../assets/images/products/14.png",
-      "../assets/images/products/15.png",
-      "../assets/images/products/16.png",
-      "../assets/images/products/17.png",
+      "../assets/images/products/14_2.png",
+      "../assets/images/products/14_3.png",
+      "../assets/images/products/14_4.png",
     ],
   },
   {
@@ -233,9 +233,9 @@ const products = [
     discount: 0,
     images: [
       "../assets/images/products/15.png",
-      "../assets/images/products/16.png",
-      "../assets/images/products/17.png",
-      "../assets/images/products/18.png",
+      "../assets/images/products/15_2.png",
+      "../assets/images/products/15_3.png",
+      "../assets/images/products/15_4.png",
     ],
   },
   {
@@ -249,9 +249,9 @@ const products = [
     discount: 0,
     images: [
       "../assets/images/products/16.png",
-      "../assets/images/products/17.png",
-      "../assets/images/products/18.png",
-      "../assets/images/products/19.png",
+      "../assets/images/products/16_2.png",
+      "../assets/images/products/16_3.png",
+      "../assets/images/products/16_4.png",
     ],
   },
   {
@@ -264,10 +264,10 @@ const products = [
     rating: 4.5,
     discount: 50,
     images: [
-      "../assets/images/products/17.png",
-      "../assets/images/products/18.png",
-      "../assets/images/products/19.png",
-      "../assets/images/products/20.png",
+      "../assets/images/products/10.png",
+      "../assets/images/products/10_2.png",
+      "../assets/images/products/10_3.png",
+      "../assets/images/products/10_4.png",
     ],
   },
   {
@@ -281,9 +281,9 @@ const products = [
     discount: 0,
     images: [
       "../assets/images/products/18.png",
-      "../assets/images/products/19.png",
-      "../assets/images/products/20.png",
-      "../assets/images/products/21.png",
+      "../assets/images/products/18_2.png",
+      "../assets/images/products/18_3.png",
+      "../assets/images/products/18_4.png",
     ],
   },
   {
@@ -296,10 +296,10 @@ const products = [
     rating: 4.5,
     discount: 0,
     images: [
-      "../assets/images/products/19.png",
-      "../assets/images/products/20.png",
-      "../assets/images/products/21.png",
-      "../assets/images/products/22.png",
+      "../assets/images/products/15.png",
+      "../assets/images/products/15_2.png",
+      "../assets/images/products/15_3.png",
+      "../assets/images/products/15_4.png",
     ],
   },
   {
@@ -313,9 +313,9 @@ const products = [
     discount: 0,
     images: [
       "../assets/images/products/20.png",
-      "../assets/images/products/21.png",
-      "../assets/images/products/22.png",
-      "../assets/images/products/23.png",
+      "../assets/images/products/20_2.png",
+      "../assets/images/products/20_3.png",
+      "../assets/images/products/20_4.png",
     ],
   },
   {
@@ -329,9 +329,9 @@ const products = [
     discount: 0,
     images: [
       "../assets/images/products/21.png",
-      "../assets/images/products/22.png",
-      "../assets/images/products/23.png",
-      "../assets/images/products/24.png",
+      "../assets/images/products/21_2.png",
+      "../assets/images/products/21_3.png",
+      "../assets/images/products/21_4.png",
     ],
   },
   {
@@ -345,9 +345,9 @@ const products = [
     discount: 20,
     images: [
       "../assets/images/products/22.png",
-      "../assets/images/products/23.png",
-      "../assets/images/products/24.png",
-      "../assets/images/products/25.png",
+      "../assets/images/products/22_2.png",
+      "../assets/images/products/22_3.png",
+      "../assets/images/products/22_4.png",
     ],
   },
   {
@@ -361,9 +361,9 @@ const products = [
     discount: 20,
     images: [
       "../assets/images/products/23.png",
-      "../assets/images/products/24.png",
-      "../assets/images/products/25.png",
-      "../assets/images/products/26.png",
+      "../assets/images/products/23_2.png",
+      "../assets/images/products/23_3.png",
+      "../assets/images/products/23_4.png",
     ],
   },
   {
@@ -377,9 +377,9 @@ const products = [
     discount: 0,
     images: [
       "../assets/images/products/24.png",
-      "../assets/images/products/25.png",
-      "../assets/images/products/26.png",
-      "../assets/images/products/27.png",
+      "../assets/images/products/24_2.png",
+      "../assets/images/products/24_3.png",
+      "../assets/images/products/24_4.png",
     ],
   },
   {
@@ -393,9 +393,9 @@ const products = [
     discount: 20,
     images: [
       "../assets/images/products/25.png",
-      "../assets/images/products/26.png",
-      "../assets/images/products/27.png",
-      "../assets/images/products/28.png",
+      "../assets/images/products/25_2.png",
+      "../assets/images/products/25_3.png",
+      "../assets/images/products/25_4.png",
     ],
   },
   {
@@ -409,9 +409,9 @@ const products = [
     discount: 0,
     images: [
       "../assets/images/products/26.png",
-      "../assets/images/products/27.png",
-      "../assets/images/products/28.png",
-      "../assets/images/products/29.png",
+      "../assets/images/products/26_2.png",
+      "../assets/images/products/26_3.png",
+      "../assets/images/products/26_4.png",
     ],
   },
   {
@@ -425,9 +425,9 @@ const products = [
     discount: 20,
     images: [
       "../assets/images/products/27.png",
-      "../assets/images/products/28.png",
-      "../assets/images/products/29.png",
-      "../assets/images/products/30.png",
+      "../assets/images/products/27_2.png",
+      "../assets/images/products/27_3.png",
+      "../assets/images/products/27_4.png",
     ],
   },
   {
@@ -441,9 +441,9 @@ const products = [
     discount: 20,
     images: [
       "../assets/images/products/28.png",
-      "../assets/images/products/29.png",
-      "../assets/images/products/30.png",
-      "../assets/images/products/31.png",
+      "../assets/images/products/28_2.png",
+      "../assets/images/products/28_3.png",
+      "../assets/images/products/28_4.png",
     ],
   },
   {
@@ -457,9 +457,9 @@ const products = [
     discount: 50,
     images: [
       "../assets/images/products/29.png",
-      "../assets/images/products/30.png",
-      "../assets/images/products/31.png",
-      "../assets/images/products/32.png",
+      "../assets/images/products/29_2.png",
+      "../assets/images/products/29_3.png",
+      "../assets/images/products/29_4.png",
     ],
   },
   {
@@ -473,9 +473,9 @@ const products = [
     discount: 0,
     images: [
       "../assets/images/products/30.png",
-      "../assets/images/products/31.png",
-      "../assets/images/products/32.png",
-      "../assets/images/products/33.png",
+      "../assets/images/products/30_2.png",
+      "../assets/images/products/30_3.png",
+      "../assets/images/products/30_4.png",
     ],
   },
   {
@@ -489,9 +489,9 @@ const products = [
     discount: 50,
     images: [
       "../assets/images/products/31.png",
-      "../assets/images/products/32.png",
-      "../assets/images/products/33.png",
-      "../assets/images/products/34.png",
+      "../assets/images/products/31_2.png",
+      "../assets/images/products/31_3.png",
+      "../assets/images/products/31_4.png",
     ],
   },
   {
@@ -505,9 +505,9 @@ const products = [
     discount: 20,
     images: [
       "../assets/images/products/32.png",
-      "../assets/images/products/33.png",
-      "../assets/images/products/34.png",
-      "../assets/images/products/35.png",
+      "../assets/images/products/32_2.png",
+      "../assets/images/products/32_3.png",
+      "../assets/images/products/32_4.png",
     ],
   },
   {
@@ -521,9 +521,9 @@ const products = [
     discount: 20,
     images: [
       "../assets/images/products/33.png",
-      "../assets/images/products/34.png",
-      "../assets/images/products/35.png",
-      "../assets/images/products/36.png",
+      "../assets/images/products/33_2.png",
+      "../assets/images/products/33_3.png",
+      "../assets/images/products/33_4.png",
     ],
   },
   {
@@ -537,9 +537,9 @@ const products = [
     discount: 20,
     images: [
       "../assets/images/products/34.png",
-      "../assets/images/products/35.png",
-      "../assets/images/products/36.png",
-      "../assets/images/products/1.png",
+      "../assets/images/products/34_2.png",
+      "../assets/images/products/34_3.png",
+      "../assets/images/products/34_4.png",
     ],
   },
   {
@@ -553,9 +553,9 @@ const products = [
     discount: 0,
     images: [
       "../assets/images/products/35.png",
-      "../assets/images/products/36.png",
-      "../assets/images/products/1.png",
-      "../assets/images/products/2.png",
+      "../assets/images/products/35_2.png",
+      "../assets/images/products/35_3.png",
+      "../assets/images/products/35_4.png",
     ],
   },
   {
@@ -569,9 +569,9 @@ const products = [
     discount: 0,
     images: [
       "../assets/images/products/36.png",
-      "../assets/images/products/1.png",
-      "../assets/images/products/2.png",
-      "../assets/images/products/3.png",
+      "../assets/images/products/36_2.png",
+      "../assets/images/products/36_3.png",
+      "../assets/images/products/36_4.png",
     ],
   },
 ];
