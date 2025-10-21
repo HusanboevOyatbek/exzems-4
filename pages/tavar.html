@@ -5,60 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 </head>
 <body>
-    <header class="fixed top-0 left-0 w-full z-[900]  bg-white shadow">
-        <div class="container mx-auto   flex py-[20px] gap-[30px] items-center justify-between  px-[30px]">
-            <div class="flex justify-between items-center gap-[50px] ">
-                <a href="">
-                    <img src="../imgs/logo (3).png" alt="logo">
-                </a>
-    
-                <a class="bg-[#70C05B] flex items-center gap-[10px] p-[5px] px-[10px] rounded-[5px] text-[#FFFFFF]" href="">
-                    <img src="../imgs/menu.png" alt="">
-                    <p class="text-[12px]">Каталог</p>
-                </a>
+
+  
+<header class="fixed top-0 left-0 w-full z-[1] bg-white shadow">
+    <div class="container mx-auto flex flex-wrap items-center justify-between px-[20px] py-[15px] gap-[10px]">
+
+
+        <div class="flex items-center justify-between w-full sm:w-auto gap-[40px]">
+            <a href="#">
+                <img src="../imgs/logo (3).png" alt="logo" class="h-[35px] sm:h-[40px] object-contain">
+            </a>
+
+            <button id="toggleBtn"
+                class="bg-[#70C05B] flex items-center justify-center gap-[10x] px-[15px] py-[10px] rounded-[5px] text-white text-[12px] w-[100px] sm:w-auto">
+                <img id="menu" src="../imgs/menu.png" alt="" class="w-[15px] h-[15px]">
+                <p>Каталог</p>
+                <img id="close" class="hidden w-[15px] h-[15px]" src="../imgs/loding.png" alt="">
+            </button>
+        </div>
+
+
+        <div class="relative w-full sm:max-w-[300px] mt-[10px] sm:mt-0">
+            <input id="search"
+                class="hidden md:flex border border-[#70C05B] text-[#8F8F8F] font-bold rounded-[4px] w-full p-[5px]"
+                type="text" placeholder="Найти товар">
+            <div id="search-result"
+                class="absolute top-[50px] left-0 w-full max-h-[400px] overflow-y-auto bg-[grey] rounded-[10px] p-[10px] z-50">
             </div>
-    
-            <input class="hidden md:flex border border-[#70C05B] text-[#8F8F8F] rounded-[4px] w-[360px] p-[5px]" type="text"
-                placeholder="Найти товар">
-            <ul class="hidden gap-[30px]  lg:flex">
-                <li class="">
-                    <a class="text-[12px] text-[#414141]" href=""><img src="../imgs/header like.png" alt="">
-                        <p class="text-[12px] text-[#414141]">
-                            Избранное
-                        </p>
-                    </a>
-                </li>
-    
-                <li class="">
-                    <a class="text-[12px] text-[#414141] " href=""><img src="../imgs/header products.png" alt="">
-    
-                        <p class="text-[12px] text-[#414141]">
-                            продукты
-                        </p>
-                    </a>
-                </li>
-    
-                <li class="">
-                    <a class="text-[12px] text-[#414141]" href=""><img src="../imgs/shopping-cart.png" alt="">
-                        Корзина
-                    </a>
-                </li>
-            </ul>
-    
-            <div class="hidden items-center gap-3 xl:flex ">
-                <a href=""><img src="../imgs/avatar (2).png" alt="" class="h-8"></a>
-                <p class="hidden sm:block text-sm md:text-base">Oyatbek</p>
-                <img src="../imgs/pasga.png" alt="" class="h-6">
-            </div>
-    
-    </header>
+        </div>
+
+
+        <ul class="hidden lg:flex gap-[25px] items-center">
+            <li>
+                <a href="../pages/like.html" class="flex flex-col items-center text-[#414141] text-[12px]">
+                    <img src="../imgs/header like.png" alt="">
+                    <p>Избранное</p>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/tavar.html" class="flex flex-col items-center text-[#414141] text-[12px]">
+                    <img src="../imgs/header products.png" alt="">
+                    <p>Продукты</p>
+                </a>
+            </li>
+            <li>
+                <a href="../pages/Basket.html" class="flex flex-col items-center text-[#414141] text-[12px]">
+                    <img src="../imgs/shopping-cart.png" alt="">
+                    <p>Корзина</p>
+                </a>
+            </li>
+        </ul>
+
+
+        <div class="hidden xl:flex items-center gap-3">
+            <a href="#"><img src="../imgs/avatar (2).png" alt="" class="h-8"></a>
+            <p class="hidden sm:block text-sm md:text-base">Oyatbek</p>
+            <img src="../imgs/pasga.png" alt="" class="h-6">
+        </div>
+
+    </div>
+</header>
 
     <ul id="res-menu"
         class="grid fixed mt-[70px] w-[60%] h-full sm:h-auto sm:w-full z-[1] translate-x-[-100%] duration-500  sm:grid-cols-5 lg:grid-cols-11  text-center items-center justify-center  bg-[greenyellow] p-[20px] gap-[10px] font-bold rounded-[10px]">
         <li class="hover:text-[#FFFFFF] duration-500">
-            <a href="index.html">Home</a>
+            <a href="../index.html">Home</a>
         </li>
         <li class="hover:text-[#FFFFFF] duration-500">
             <a href="">All products</a>
@@ -76,11 +90,11 @@
         </li>
     
         <li class="hover:text-[#FFFFFF] duration-500">
-            <a href="">Favorites</a>
+            <a href="./like.html">Favorites</a>
         </li>
     
         <li class="hover:text-[#FFFFFF] duration-500">
-            <a href="">Basket</a>
+            <a href="../pages/Basket.html">Basket</a>
         </li>
     
         <li class="hover:text-[#FFFFFF] duration-500">
@@ -100,11 +114,11 @@
         </li>
     </ul>
 
-    <main class="pt-[88px]">
+    <main class="pt-[88px] py-[90px]">
         <section>
-            <div class="container mx-auto">
+            <div class="container mx-auto px-[20px]">
 
-              <div class="grid grid-cols-4 gap-[10px`]">
+              <div class=" grid grid-cols-2 md:grid-cols-4 gap-[10px`] ">
                 <div class=" flex   gap-1">
                     <a class="text-[12px] text-[#414141] mt-[2px]" href="../index.html">Главная</a>
                     <img class="inline" width="26px " src="../imgs/togle.png" alt="">
@@ -123,7 +137,7 @@
 
 
               <div class=" ">
-                <h3 class="text-[24px] font-bold text-[#414141]">
+                <h3 class="text-[18px]  sm:text-[24px] font-bold text-[#414141] ">
                     Масло ПРОСТОКВАШИНО сливочное в/с 82% фольга без змж, Россия, 180 г
                 </h3>
               </div>
@@ -160,19 +174,40 @@
             </div>
 
 
-          <div class="single-product">
+       <div class="single-product ">
+      
+      
 
-          </div>
+ </div>
+        </section>
 
+        <section>
+            <div class="container mx-auto mt-[40px] px-[20px]">
+                <h1 class="text-[24px] md:text-[36px]  text-[#414141] font-bold">
+                    С этим товаров мокупают
+                </h1>
+                <div class="catalog-tovar justify-center items-center grid lg:grid-cols-4 mt-[20px] gap-[24px] sm:grid-cols-2">
+                    
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container mx-auto mt-[40px] ">
+                <h1 class="text-[36px] px-[20px] text-[#414141] font-bold mt-[15px]">
+                    Акции
+                </h1>
+                <div class="might  grid justify-center sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[30px] px-[20px]">
+                    
+                </div>
             </div>
         </section>
     </main>
 
 
 
-    <!-- <footer class="bg-[url('./imgs/footer.png')] bg-center bg-cover h-[200px] bg-[#FFFFFF]">
+    <footer class="bg-[url('../imgs/footer.png')] bg-center bg-cover h-[200px] bg-[#FFFFFF]">
         <div class="container mx-auto py-[90px] flex justify-between items-center px-[20px] gap-[10px]">
-            <a href=""><img src="./imgs/footer logo (4).png" alt=""></a>
+            <a href=""><img src="../imgs/footer logo (4).png" alt=""></a>
     
             <ul class="grid grid-cols-2  md:grid-cols-3 md:gap-[5px]  lg:grid-cols-5 max-w-[636px] w-full ">
                 <li class="text-[12px] text-[#414141]">
@@ -202,25 +237,25 @@
     
             <ul class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4  xl:grid-cols-4 gap-[16px]">
                 <li>
-                    <a href=""><img class="max-w-[50px]" src="./imgs/instagram.png" alt=""></a>
+                    <a href=""><img class="max-w-[50px]" src="../imgs/instagram.png" alt=""></a>
                 </li>
     
                 <li>
-                    <a href=""> <img class="max-w-[50px]" src="./imgs/vkontakte.png" alt=""></a>
+                    <a href=""> <img class="max-w-[50px]" src="../imgs/vkontakte.png" alt=""></a>
                 </li>
                 <li>
-                    <a href=""><img class="max-w-[50px]" src="./imgs/facebook.png" alt=""></a>
+                    <a href=""><img class="max-w-[50px]" src="../imgs/facebook.png" alt=""></a>
                 </li>
     
                 <li>
-                    <a href=""><img class="max-w-[50px]" src="./imgs/ok.png" alt=""></a>
+                    <a href=""><img class="max-w-[50px]" src="../imgs/ok.png" alt=""></a>
                 </li>
             </ul>
     
             <div class="hidden  lg:flex">
                 <div class=" flex items-center gap-[10px]">
                     <a href="">
-                        <img src="./imgs/phone.png" alt="">
+                        <img src="../imgs/phone.png" alt="">
                     </a>
                     <p class="text-[#414141] md:text-[16px] font-bold">
                         +998 97 021 51 91
@@ -232,9 +267,10 @@
     
             </div>
         </div>
-    </footer> -->
+    </footer>
 
 <script src="../products-data/products-data.js"></script>
+<script src="../js/header.js"></script>
 <script src="../js/prodact.js"></script>
 
 
