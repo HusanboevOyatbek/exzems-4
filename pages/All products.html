@@ -4,22 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basket</title>
+    <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
 </head>
-
 <body>
 
     <header class="fixed top-0 left-0 w-full z-[1] bg-white shadow">
         <div class="container mx-auto flex flex-wrap items-center justify-between px-[20px] py-[15px] gap-[10px]">
-
-
+    
+    
             <div class="flex items-center justify-between w-full sm:w-auto gap-[40px]">
                 <a href="#">
                     <img src="../imgs/logo (3).png" alt="logo" class="h-[35px] sm:h-[40px] object-contain">
                 </a>
-
+    
                 <button id="toggleBtn"
                     class="bg-[#70C05B] flex items-center justify-center gap-[10x] px-[15px] py-[10px] rounded-[5px] text-white text-[12px] w-[100px] sm:w-auto">
                     <img id="menu" src="../imgs/menu.png" alt="" class="w-[15px] h-[15px]">
@@ -27,8 +26,8 @@
                     <img id="close" class="hidden w-[15px] h-[15px]" src="../imgs/loding.png" alt="">
                 </button>
             </div>
-
-
+    
+    
             <div class="relative w-full sm:max-w-[300px] mt-[10px] sm:mt-0">
                 <input id="search"
                     class="hidden md:flex border border-[#70C05B] text-[#8F8F8F] font-bold rounded-[4px] w-full p-[5px]"
@@ -37,8 +36,8 @@
                     class="absolute top-[50px] left-0 w-full max-h-[400px] overflow-y-auto bg-[grey] rounded-[10px] p-[10px] z-50">
                 </div>
             </div>
-
-
+    
+    
             <ul class="hidden lg:flex gap-[25px] items-center">
                 <li>
                     <a href="../pages/like.html" class="flex flex-col items-center text-[#414141] text-[12px]">
@@ -59,17 +58,17 @@
                     </a>
                 </li>
             </ul>
-
-
+    
+    
             <div class="hidden xl:flex items-center gap-3">
                 <a href="#"><img src="../imgs/avatar (2).png" alt="" class="h-8"></a>
                 <p class="hidden sm:block text-sm md:text-base">Oyatbek</p>
                 <img src="../imgs/pasga.png" alt="" class="h-6">
             </div>
-
+    
         </div>
     </header>
-
+    
     <ul id="res-menu"
         class="grid fixed mt-[70px] w-[60%] h-full sm:h-auto sm:w-full z-[1] translate-x-[-100%] duration-500  sm:grid-cols-5 lg:grid-cols-11  text-center items-center justify-center  bg-[greenyellow] p-[20px] gap-[10px] font-bold rounded-[10px]">
         <li class="hover:text-[#FFFFFF] duration-500">
@@ -81,44 +80,58 @@
         <li class="hover:text-[#FFFFFF] duration-500">
             <a href="">Categories</a>
         </li>
-
+    
         <li class="hover:text-[#FFFFFF] duration-500">
             <a href="">Category</a>
         </li>
-
+    
         <li class="hover:text-[#FFFFFF] duration-500">
             <a href="../pages/tavar.html">Product</a>
         </li>
-
+    
         <li class="hover:text-[#FFFFFF] duration-500">
             <a href="./like.html">Favorites</a>
         </li>
-
+    
         <li class="hover:text-[#FFFFFF] duration-500">
             <a href="../pages/">Basket</a>
         </li>
-
+    
         <li class="hover:text-[#FFFFFF] duration-500">
             <a href="">About Us</a>
         </li>
-
+    
         <li class="hover:text-[#FFFFFF] duration-500">
             <a href="">Contacts</a>
         </li>
-
+    
         <li class="hover:text-[#FFFFFF] duration-500">
             <a href="">Vacancies</a>
         </li>
-
+    
         <li>
             <img src="" alt="">
         </li>
     </ul>
 
+    <main class="pt-[88px] py-[90px]">
+        <section>
+            <div class="container mx-auto ">
+                <h1 class="text-xl mx-[20px] text-[#414141] text-[36px] font-bold mb-5">
+                    Все продукты
+                </h1>
+                <div
+                    class="al-cards  grid justify-center sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[30px] px-[20px]">
+                
+                </div>
+            </div>
+        </section>
+    </main>
+
     <script src="../products-data/products-data.js"></script>
+    <script src="../js/All products.js"></script>
     <script src="../js/like.js"></script>
     <script src="../js/header.js"></script>
     <script src="../js/prodact.js"></script>
 </body>
-
 </html>
