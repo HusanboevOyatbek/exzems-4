@@ -2,20 +2,20 @@
 let productCards = document.querySelector(".aksiya-cards");
 let lastFourProducts = products.slice(-4);
 let badge = document.getElementById("badge")
-let cart = []
+let cart = JSON.parse(localStorage.getItem("cart") || "[]")
 let isExist;
-
-
+localStorage.setItem("cart", JSON.stringify(cart))
+ 
 badge.textContent = cart.length
-
+//** reting str */
 function getStars(rating) {
-  const fullStar = `<img src="./imgs/star-full.svg" class="w-5 h-5">`;
-  const halfStar = `<img src="./imgs/star-half.svg" class="w-5 h-5">`;
+  let fullStar = `<img src="./imgs/star-full.svg" class="w-5 h-5">`;
+  let halfStar = `<img src="./imgs/star-half.svg" class="w-5 h-5">`;
 
   let stars = "";
 
 
-  const fullCount = Math.floor(rating);
+  let fullCount = Math.floor(rating);
   for (let i = 0; i < fullCount; i++) stars += fullStar;
 
 
@@ -23,12 +23,15 @@ function getStars(rating) {
 
   return `<div class="flex items-center mt-[8px] gap-[2px]">${stars}</div>`;
 }
+//** reting end */
+
+console.log(cart);
 
 
 function showProducts(content, data) {
   content.innerHTML = "";
   data.map((el) => {
-    const itemInCart = cart.find((car) => car.id === el.id);
+    
 
     content.innerHTML += `
     <div class="crsds w-full bg-[#FFFFFF] max-w-[400px] shadow rounded-md overflow-hidden block hover:shadow-lg transition-all duration-300 cursor-pointer">
@@ -52,11 +55,11 @@ function showProducts(content, data) {
 
       ${getStars(el.rating)}
 
-      ${itemInCart
+      ${cart.find((car) => car.id === el.id)
         ? `
           <div class="flex items-center justify-between w-full rounded-[10px] border border-[#E0E0E0] bg-gradient-to-r from-[#F8F9FA] to-[#E9ECEF] shadow-sm overflow-hidden mt-[10px]">
             <button onClick="decrease(${el.id})" class="w-1/3 py-2 font-semibold text-[18px] text-[#333] bg-[#F1F3F5] active:scale-95 transition-all">−</button>
-            <span class="w-1/3 text-center py-2 bg-white text-[#2F9E44] font-bold text-[18px]">${itemInCart.qty}</span>
+            <span class="w-1/3 text-center py-2 bg-white text-[#2F9E44] font-bold text-[18px]">${cart.find((car) => car.id === el.id).qty}</span>
             <button onClick="increase(${el.id})" class="w-1/3 py-2 font-semibold text-[18px] text-white bg-[#70C05B] active:scale-95 transition-all">+</button>
           </div>`
         : `
@@ -80,12 +83,14 @@ function addCard(id) {
   cart.push({ ...itm, qty: 1 });
   badge.textContent = cart.length;
   showProducts(productCards, lastFourProducts);
+  localStorage.setItem("cart", JSON.stringify(cart))
 }
 
 function increase(id) {
   let item = cart.find((el) => el.id === id);
   if (item) item.qty++;
   showProducts(productCards, lastFourProducts);
+  localStorage.setItem("cart", JSON.stringify(cart))
 }
 
 function decrease(id) {
@@ -97,6 +102,7 @@ function decrease(id) {
   }
   badge.textContent = cart.length;
   showProducts(productCards, lastFourProducts);
+  localStorage.setItem("cart", JSON.stringify(cart))
 }
 
 showProducts(productCards, lastFourProducts);

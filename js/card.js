@@ -2,7 +2,7 @@
 let cardCArds = document.querySelector(".discripton");
 let homCards = document.getElementById("home-cards");
 let badge = document.getElementById("badge");
-let card = []
+let card = JSON.parse(localStorage.getItem("cart") || "[]")
 
 badge.textContent = card.length
 
@@ -13,7 +13,8 @@ cardCArds.innerHTML += `
 `
 
 function showProducts(content, data) {
-    data.map((el) => {
+    content.innerHTML = ''
+    data.forEach((el) => {
         content.innerHTML += `
 <div class="px-[20px]">
     <div
@@ -31,12 +32,12 @@ function showProducts(content, data) {
         </div>
 
 
-
+        
         <div class="flex items-center bg-[#F3F2F1] rounded-[6px] overflow-hidden border border-[#70C05B]">
-            <button
+            <button onClick="decrease(${el.id})"
                 class="px-[12px] py-[6px] text-[#70C05B] font-bold text-[18px] hover:bg-[#70C05B] hover:text-white duration-300 cursor-pointer ">-</button>
-            <span class="px-[12px] py-[6px] text-[#414141] font-medium">1</span>
-            <button
+            <span id="qty-${el.id}" class="px-[12px] py-[6px] text-[#414141] font-medium">${el.qty || 1}   </span>
+            <button   onClick="increase(${el.id})"
                 class="px-[12px] py-[6px] text-[#70C05B] font-bold text-[18px] hover:bg-[#70C05B] hover:text-white duration-300 cursor-pointer">+</button>
         </div>
 
@@ -50,11 +51,47 @@ function showProducts(content, data) {
     })
 }
 
-showProducts(homCards, products)
+
+
+showProducts(homCards, card)
+
+function saveCart() {
+    localStorage.setItem('cart', JSON.stringify(card))
+    badge.textContent = card.length
+}
+
+function increase(id) {
+    const idx = card.findIndex(c => c.id === id)
+    if (idx === -1) return
+    card[idx].qty = (card[idx].qty || 1) + 1
+    saveCart()
+    showProducts(homCards, card)
+}
+
+function decrease(id) {
+    const idx = card.findIndex(c => c.id === id)
+    if (idx === -1) return
+    const currentQty = card[idx].qty || 1
+    if (currentQty > 1) {
+        card[idx].qty = currentQty - 1
+    } else {
+        card.splice(idx, 1)
+    }
+    saveCart()
+    showProducts(homCards, card)
+}
 
 function addCard(id) {
-    let item = products.find((el) => el.id === id)
-    card.push(item)
-    badge.textContent = card.length
-
+    const product = products.find((el) => el.id === id)
+    if (!product) return
+    const existing = card.find(c => c.id === id)
+    if (existing) {
+        existing.qty = (existing.qty || 1) + 1
+    } else {
+        const item = Object.assign({}, product)
+        item.qty = 1
+        card.push(item)
+    }
+    saveCart()
+    showProducts(homCards, card)
 }
