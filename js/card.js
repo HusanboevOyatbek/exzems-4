@@ -18,20 +18,21 @@ cardCArds.innerHTML += `
     ${products[0].description}
 </h1>
 `
+function showProducts(content, data) {
 
-let sum = 0;
-let discount = 0;
+    let sum = 0;
+    let discount = 0;
 
-promoInput.addEventListener("input", function (e) {
-    if (e.target.value === "OYATTILO") {
+    promoInput.addEventListener("input", function (e) {
+        if (e.target.value === "OYATTILO") {
 
-        discount += 200;
-        calculatePrice(0, discount)
+            discount += 200;
+            calculatePrice(0, discount)
 
-    }
+        }
     })
 
-    function calculatePrice( sum = 0 , discount = 0) {
+    function calculatePrice(sum = 0, discount = 0) {
         for (let el of card) {
             sum += el.price * el.qty;
             discount += el.price * el.qty * el.discount / 100;
@@ -41,9 +42,9 @@ promoInput.addEventListener("input", function (e) {
         allDiscounts.textContent = Math.floor(discount);
         payPrice.textContent = Math.floor(sum - discount);
     }
-    calculatePrice(sum , discount)
-    
-  homCards.innerHTML = ''
+    calculatePrice(sum, discount)
+
+    homCards.innerHTML = ''
     card.forEach((el) => {
         homCards.innerHTML += `
         <div class="px-[20px] relative ">
@@ -91,6 +92,8 @@ promoInput.addEventListener("input", function (e) {
 </div>
 `
     })
+}
+showProducts(cardCArds, card )
 
 
 
