@@ -93,7 +93,7 @@ function showProducts(content, data) {
 `
     })
 }
-showProducts(cardCArds, card )
+showProducts(cardCArds, card)
 
 
 

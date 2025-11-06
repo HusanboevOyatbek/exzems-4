@@ -80,9 +80,15 @@
             </ul>
 
 
-            <div class="hidden xl:flex items-center gap-3">
-                <a href="#"><img src="../imgs/avatar (2).png" alt="" class="h-8"></a>
-                <p class="hidden sm:block text-sm md:text-base">Oyatbek</p>
+            <div
+            id="profil"
+            class="hidden xl:flex items-center gap-3 cursor-pointer">
+                <img
+                 id="profel-img"
+                 src="./imgs/person.jpg" alt="" class="h-[40px] rounded-[50%] ">
+                <h1
+                id="profil-name"
+                class="hidden sm:block text-sm md:text-base">Kirish</h1>
                 <img src="../imgs/pasga.png" alt="" class="h-6">
             </div>
 
@@ -136,6 +142,25 @@
     </ul>
     <!-- heder-hover end -->
     <main class="pt-[88px] py-[90px] bg-[#FCD5]">
+       
+        <div id="profilmodal" class="hidden fixed z-[4] top-0 left-0 w-full h-full bg-[#FCD5BACC]/80 flex items-center justify-center p-[30px]">
+          <div
+          id="inner-profayl-modal"
+          class="max-w-[500px] w-full p-[30px] bg-white rounded-[20px]">
+            <h1 class="text-[24px] font-bold text-center mb-[10px]">
+                Profil yarating
+            </h1>
+            <form
+            id="form-modal"
+            class=" flex flex-col gap-[20px]">
+                <input required class="w-full border-[#70C05B] p-[5px] border-[1px] rounded-[5px] cursor-pointer  pl-[15px] outline-none" type="text" placeholder="Isim kiriting">
+                <input required class="w-full border-[#70C05B] p-[5px] border-[1px] rounded-[5px] cursor-pointer pl-[15px] outline-none" type="text" placeholder="Rasim URL ni kiriting">
+                <input required class="w-full border-[#70C05B] p-[5px] border-[1px] rounded-[5px] cursor-pointer pl-[15px] outline-none" type="tel " placeholder="Tel raqam">
+                <button type="submit" class="bg-transparent border p-[10px] border-[1px] rounded-[5px] font-bold pl-[15px] rounded-[10px] cursor-pointer hover:bg-[#70C05B] hover:text-white duration-500 border-[#70C05B]">Malumot yuborish</button>
+            </form>
+          </div>
+        </div>
+       
         <section class="bg-[url('./imgs/dostavka.png')] bg-no-repeat bg-center bg-cover h-[200px]">
 
         </section>
@@ -196,7 +221,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <!-- <section>
             <div class="container mx-auto my-[90px]">
                 <h1 class="mx-[20px] mb-[20px] text-[#414141] text-[36px] font-bold">
                     Специальные предложения
@@ -240,6 +265,52 @@
                         </div>
                     </div>
 
+                </div>
+            </div>
+        </section> -->
+
+
+        <section>
+            <div class="container mx-auto my-[90px]">
+                <h1 class="mx-[20px] mb-[20px] text-[#414141] text-[36px] font-bold">
+                    Специальные предложения
+                </h1>
+        
+                <div class="items-center text-center grid lg:grid-cols-2 gap-[40px] mx-[20px]">
+        
+                    <!-- 1-karta -->
+                    <div
+                        class="items-center flex justify-between gap-[25px] bg-[#FCD5BA] rounded-[4px] p-[20px] mb-[10px] max-w-[1000px]">
+                        <div>
+                            <h1 class="text-[24px] text-[#414141] font-bold">
+                                Оформите карту <br> «Северяночка»
+                            </h1>
+                            <p class="text-[#414141] text-[16px]">
+                                И получайте бонусы при покупке <br>
+                                в магазинах и на сайте
+                            </p>
+                        </div>
+                        <div>
+                            <img class="max-w-[280px] w-full" src="./imgs/korta.png" alt="">
+                        </div>
+                    </div>
+        
+                    <!-- 2-karta -->
+                    <div
+                        class="items-center flex justify-between gap-[25px] bg-[#E5FFDE] rounded-[4px] p-[20px] mb-[10px] max-w-[1000px]">
+                        <div>
+                            <h1 class="text-[24px] text-[#414141] font-bold">
+                                Покупайте <br> акционные товары
+                            </h1>
+                            <p class="text-[#414141] text-[16px]">
+                                И получайте вдвое больше <br> бонусов
+                            </p>
+                        </div>
+                        <div>
+                            <img class="max-w-[190px] w-full" src="./imgs/savat val.png" alt="">
+                        </div>
+                    </div>
+        
                 </div>
             </div>
         </section>
